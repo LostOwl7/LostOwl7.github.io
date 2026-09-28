@@ -1,0 +1,72 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+/* css reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* light gray page */
+body {
+	background-color: hsl(220, 20%, 96%);
+}
+
+/* the nav bar - white bar */
+nav {
+	background-color: white;
+	font-family: "Inter", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+/* the logo text */
+.logo h1 {
+	color: hsl(225, 70%, 45%);
+	font-size: 1.5rem;
+}
+
+/* phone view: links go down the page */
+nav ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style-type: none;
+}
+
+/* the links */
+nav a {
+	color: hsl(220, 20%, 30%);
+	text-decoration: none;
+	display: inline-block;
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	transition: background-color .2s;
+}
+
+/* light blue when you hover */
+nav a:hover {
+	background-color: hsl(225, 70%, 92%);
+}
+
+/* the current page link is dark blue */
+nav a.current {
+	background-color: hsl(225, 70%, 45%);
+	color: white;
+}
+
+/* computer view: IF the screen is AT LEAST 769px wide, everything goes side by side */
+@media screen and (min-width: 769px) {
+	nav,
+	nav ul {
+		flex-direction: row;
+	}
+
+	nav {
+		justify-content: space-between;
+		padding: 1rem 2rem;
+	}
+}

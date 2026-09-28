@@ -1,0 +1,55 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* css reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* yellow page */
+body {
+	background-color: hsl(55, 100%, 60%);
+}
+
+/* the nav bar - a yellow bar that is almost the same as the page */
+nav {
+	background-color: hsl(55, 100%, 54%);
+	font-family: "Creepster", cursive;
+	padding: 1rem;
+}
+
+/* phone view: links go down the page */
+nav ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+}
+
+/* the links - yellow text on yellow, very small */
+nav a {
+	color: hsl(55, 100%, 47%);
+	font-size: .7rem;
+	text-decoration: none;
+	display: inline-block;
+	transition: transform .2s;
+}
+
+/* the links jump away when you try to click them */
+nav a:hover {
+	transform: translate(5rem, 2rem);
+}
+
+/* the current link is even harder to see */
+nav a.current {
+	color: hsl(55, 100%, 50%);
+}
+
+/* computer view: IF the screen is AT LEAST 769px wide, links go side by side */
+@media screen and (min-width: 769px) {
+	nav ul {
+		flex-direction: row;
+		gap: 3rem;
+	}
+}
