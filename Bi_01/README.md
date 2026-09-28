@@ -20,9 +20,7 @@ Not including this part will instantly cost you 10 points:
 
 ## Process
 
-I started from the starter files. Both pages use a `<nav>` with an unordered list of four links (`href="#"`), and the About link has `class="current"`. The bad page has no logo, just the links.
-
-In both CSS files the links stack vertically by default (phone view). A media query (`min-width: 769px`) switches them to a row on bigger screens.
+I started from listing out the characteristics of the two navigation, for the good, i want it to be clean, easy to see, and perfessional. For the bad navigation, the charactersitics are ugly color, hard to read text, and unnecessary animation. I then code out the basic structure of the html and put the required section inplace. I then start adding the characterstics that i wanted into the html. 
 
 ### Good version
 - White bar, Inter font, blue logo text.
@@ -36,6 +34,4 @@ In both CSS files the links stack vertically by default (phone view). A media qu
 
 ## Collaboration / tutorials / AI
 
-- Partner: <!-- name, or "worked alone" -->
-- Tutorials/references: <!-- e.g. MDN docs on flexbox, transitions, media queries -->
-- AI use: I used Claude (Anthropic's AI assistant) to help draft the HTML, CSS, and this README from the assignment instructions and starter files. <!-- Describe what you changed, tested, or learned yourself. -->
+- AI use: I used Claude to help figure out the code layout i want to get the desire style.
